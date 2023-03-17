@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_x/second_view.dart';
 import 'package:get_x/view.dart';
 
@@ -20,7 +19,8 @@ class MyApp extends StatelessWidget {
 
       // Get Page is used to make pages in the app
       getPages: [
-        GetPage(name: "/secondPage", page: () => const SecondScreen())
+        GetPage(name: "/secondPage", page: () => const SecondScreen(),
+        )
       ],
       title: 'Flutter Demo',
       theme: ThemeData(
